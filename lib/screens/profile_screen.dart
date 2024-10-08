@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mobile_store_keeping/themes/theme.dart';
 
 import 'login_screen.dart';
 
@@ -107,7 +108,7 @@ class ProfileScreen extends StatelessWidget {
           Get.offAll(() => LoginScreen()); // Navigate to login screen after logout
         },
         child: Icon(Icons.logout),
-        backgroundColor: Colors.red,
+        backgroundColor: AppTheme.secondaryColor,
         tooltip: 'Logout',
       ),
     );
